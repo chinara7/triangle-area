@@ -14,10 +14,10 @@ def calculate_area():
             triangle_area = math.sqrt(s * (s - a) * (s - b) * (s - c))
             result_label.config(text="NƏTİCƏ: {}".format(triangle_area), font=("Arial", 40, "bold"), fg="#4C7B6D")
         else:
-            result_label.config(text="XƏTA: Daxil edilən dəyərlər üçbucaq yaratmır", font=("Arial", 30),
+            result_label.config(text="XƏTA: Daxil edilən dəyərlər üçbucaq yaratmır.", font=("Arial", 30),
                                 fg="red")
     except ValueError:
-        result_label.config(text="XƏTA: Tərəflərə yalnız ədəd daxil edə bilərsiniz.", font=("Arial", 30), fg="red")
+        result_label.config(text="XƏTA: Tərəflərə yalnız əlavə daxil edə bilərsiniz.", font=("Arial", 30), fg="red")
 
 
 root = tk.Tk()
